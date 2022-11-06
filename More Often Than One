@@ -9,6 +9,7 @@ int main(){
     num1=num;
     
     for(a=9;a>0;a--){
+        c=0;
         for(i=num1;i>0;i/=10){
             b=i%10;
             if(b==a){
