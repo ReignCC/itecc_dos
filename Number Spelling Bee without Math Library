@@ -1,0 +1,71 @@
+#include <stdio.h>
+
+int main() {
+
+    int num,num2,a=0,b=0,c=0,r=0,sum=0;
+    int arr[100];
+    int i,x;
+    
+    printf("Enter number: ");
+    scanf("%d",&num);
+   
+    if(num==0){
+        printf("Zero");
+        return 0;
+    }
+     for(num;num!=0;num/=10){
+        r=num%10;
+        sum=sum*10+r;
+        c++;
+        }
+    
+    for(i=sum;i>0;i/=10){
+        b=i%10;
+        arr[a]=b;
+        a++;
+        if(arr[a]==32){
+            arr[a]=0;
+        }
+        
+    }
+    
+    for(x=0;x<c;x++){
+        
+        if(arr[x]==0){
+            printf("Zero");
+        }
+        if(arr[x]==1){
+            printf("One");
+        }
+        if(arr[x]==2){
+            printf("Two");
+        }
+        if(arr[x]==3){
+            printf("Three");
+        }
+        if(arr[x]==4){
+            printf("Four");
+        }
+        if(arr[x]==5){
+            printf("Five");
+        }
+        if(arr[x]==6){
+            printf("Six");
+        }
+        if(arr[x]==7){
+            printf("Seven");
+        }
+        if(arr[x]==8){
+            printf("Eight");
+        }
+        if(arr[x]==9){
+            printf("Nine");
+        }
+        if(arr[x]==10){
+            printf("Ten");
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
